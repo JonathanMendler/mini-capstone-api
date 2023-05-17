@@ -45,4 +45,10 @@ class ProductsController < ApplicationController
     @product.destroy
     render json: { message: "File successfully destroyed" }
   end
+
+  def supplier
+    @supplier = Supplier.find_by(id: params["supplier"])
+    render :show
+  end
+
 end
