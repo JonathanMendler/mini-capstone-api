@@ -4,10 +4,10 @@ one:
   name: MyString
   price: 10
   description: Singsongdigndong
-  image: myimage.jpg
+
 
 two:
   name: MyString
   price: 10
   description: Singsongdingdong
-  image: myimage.jpg
+
