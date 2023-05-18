@@ -7,4 +7,6 @@ Product.create!([
 supplier1 = Supplier.create(name: "Thousand", email: "info@explorethousand.com", phone_number: "555-555-3876")
 supplier2 = Supplier.create(name: "Brooks", email: "BrooksEngland@email.com", phone_number: "+39 0444 46 11 00")
 
-image1 = Image.create(name: "Thousand", email: "info@explorethousand.com", phone_number: "555-555-3876")
+image1 = Image.create(url: "https://cdn.shopify.com/s/files/1/0836/6919/products/retro_bike_helmet_001_800x.jpg?v=1611711971", "https://cdn.shopify.com/s/files/1/0836/6919/products/retro_bike_helmet_004_800x.jpg?v=1611711971", "https://cdn.shopify.com/s/files/1/0836/6919/files/thousand-features-helmet-poplock-speedway-creme.jpg")
+image2 = Image.create(url: "https://www.petesgarage.com/images/1069-2726-large.jpg", "https://content.backcountry.com/images/items/1200/BHS/BHS0021/HON_D9.jpg", "https://content.backcountry.com/images/items/1200/BHS/BHS0021/HON_D8.jpg")
+image3 = Image.create(url: "https://aventon-images.imgix.net/products/410064.jpg?auto=compress,format&q=75", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUC_8n2Wpkl7APgUMv3PiXDZvl86nqKB6qN0BB4SiF825fEc6iOzRwSe6vFLliTMu-72M&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9loemhOW1qP7dAXeS68JrirHmoaEK9B__VsMGzHca40TopFtP7cMgBeG6X42qE4NYqQ&usqp=CAU")
