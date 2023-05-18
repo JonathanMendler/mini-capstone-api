@@ -1,5 +1,3 @@
 class Image < ApplicationRecord
-  def products
-    Product.where(url: id)
-  end
+  validates_format_of :image_url, :with => %r{\.(png|jpg|jpeg)$}i, :message => "image must be png, jpg, or jpeg", multiline: true
 end
