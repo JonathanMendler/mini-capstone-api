@@ -9,3 +9,4 @@ json.tax product.tax
 json.total product.total
 json.inventory product.inventory
 json.supplier product.supplier
+json.url product.url

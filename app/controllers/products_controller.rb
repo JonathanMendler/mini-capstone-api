@@ -51,4 +51,9 @@ class ProductsController < ApplicationController
     render :show
   end
 
+  def image
+    @image = Image.find_by(id: params["url"])
+    render :show
+  end
+
 end

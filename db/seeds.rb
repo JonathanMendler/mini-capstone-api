@@ -6,3 +6,5 @@ Product.create!([
 
 supplier1 = Supplier.create(name: "Thousand", email: "info@explorethousand.com", phone_number: "555-555-3876")
 supplier2 = Supplier.create(name: "Brooks", email: "BrooksEngland@email.com", phone_number: "+39 0444 46 11 00")
+
+image1 = Image.create(name: "Thousand", email: "info@explorethousand.com", phone_number: "555-555-3876")
