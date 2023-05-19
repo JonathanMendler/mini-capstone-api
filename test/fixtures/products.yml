@@ -4,10 +4,12 @@ one:
   name: MyString
   price: 10
   description: Singsongdigndong
+  supplier: one
 
 
 two:
   name: MyString
   price: 10
   description: Singsongdingdong
+  supplier: two
 
