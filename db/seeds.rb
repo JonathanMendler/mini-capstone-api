@@ -21,3 +21,7 @@ product = Product.create!(
 Image.create(url: "https://m.media-amazon.com/images/I/51SWGcYJc5L._AC_SL1200_.jpg", product_id: product.id)
 Image.create(url: "https://cdn.shopify.com/s/files/1/0566/5180/8923/products/410061-2_1400x.jpg", product_id: product.id)
 Image.create(url: "https://cdn.shopify.com/s/files/1/0566/5180/8923/products/410061-3_1400x.jpg", product_id: product.id)
+
+order = Order.create(
+
+)
