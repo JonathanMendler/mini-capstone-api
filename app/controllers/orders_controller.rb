@@ -1,19 +1,19 @@
 class OrdersController < ApplicationController
-  def index
-    @orders = Order.all
-    render :index
-  end
-
   def create
-    if current_user = 
-      calculated_tax
+    product = Product.find_by(id: params["product_id"])
+    quantity = params["quantity"].to_i
+
+    caluclated_subtotal = product.price * quantity
+    calculated_tax = product.tax * quantity
+    calculated_total = caluclated_subtotal + calculated_tax
+
     @order = Order.create(
       user_id: current_user.id,
       product_id: params["product_id"],
       quantity: params["quantity"],
-      subtotal: params["subtotal"],
-      tax: params["tax"],
-      total: params["total"],
+      subtotal: caluclated_subtotal,
+      tax: calculated_tax,
+      total: calculated_total,
     )
 
     if @order.valid?
@@ -26,5 +26,14 @@ class OrdersController < ApplicationController
   def show
     @order = current_user.orders.find_by(id: params["id"])
     render :show
+  end
+
+  def index
+    if current_user
+      @orders = current_user.orders
+      render :index
+    else
+      render json: [], status: :unauthorized
+    end
   end
 end
