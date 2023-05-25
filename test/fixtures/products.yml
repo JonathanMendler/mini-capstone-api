@@ -4,6 +4,7 @@ one:
   name: MyString
   price: 10
   description: Singsongdigndong
+  inventory: 5
   supplier: one
 
 
@@ -11,5 +12,6 @@ two:
   name: MyString
   price: 10
   description: Singsongdingdong
+  inventory: 11
   supplier: two
 
